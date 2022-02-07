@@ -31,7 +31,7 @@ export const mixins = {
   contentWide: css`
     margin-left: auto;
     margin-right: auto;
-    max-width: calc(100% - 50px);
+    max-width: 730px;
     width: ${sizes.desktopContentWidth};
 
     @media (max-width: ${sizes.spBreakpointMax}) {
@@ -64,6 +64,10 @@ export const mixins = {
     @media (max-width: ${sizes.spBreakpointMax}) {
       margin-bottom: ${sizes.marginBetweenComponentsSp};
     }
+  `,
+
+  componentStandardBorderRadius: css`
+    border-radius: 15px;
   `,
 
   componentBorderRadius: css`
@@ -164,5 +168,30 @@ export const GlobalStyle = createGlobalStyle`
         @media (max-width: ${sizes.spBreakpointMax}) {
             font-size: 6vw;
         }
+    }
+
+    button {
+      background: ${backgrounds.azureRadiance};
+      border: none;
+      border-radius: 10px;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Space Mono, Verdana, sans-serif;
+      padding: 13px 24px;
+    }
+
+    input {
+      background: white url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAYCAYAAAAPtVbGAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAIESURBVHgBrVXLUQJBEH29lqVVHjQDMQMyECPQDNQI9KaUB7EsS7hhBEgEYgRiBpgBZsBJpSwYX/fMIuwu/33UDsPQs697uue1YBrK7hAOJT4niFDgyp6tD9GB2POMR3nHApDUyrUrcGzwn1Kw6HHskqwXfhc594SO6xu0e5DPxUnUe6AVvG7zJXf4odd16SUcKXE85e6zQFZBVe7mk1y5Yx5LyzwfcFNNnjAPGrXgjbPCLCIZGYPGESPQ8O/lA4tinAjcm5GnKHzf0lC9uVyKQFEVzdeRnYBjMVy6vTSJ9+QMmoNHaWIVKNEQdXN0i7lKkQgubKZG62AbPofCkk+ROJakoiavWAcV0eNqW+knjiziR0nayAddG3ewO0kSX6w8SQY4mCTxNzofIgnvGaA3SeLlooA8EOf3N0Q0IollxEvK6qgw2V7vUjIUk3j9WQd9HIdZ6ipEJgNx6a0ajV5o72SXb2ynSRSblBOFysKN28cy0Dvh8GK3nYeWJfueRPVKSKSGA3qyKJFGsGXCWrQovpF5oSWxSYWyYnONaiPbM/N+m3IkdgJath0+ReuafYplIvHZnfFfun27VS8l1L6WaRRKdbz3XLuGCW0GUZokRtmpmp5YQYyrgpd07fEtfKE54fUUoukkyehiqKzPtp0aUb5QorJz/NZjH3XGfFGVcyA0MeIPVn/H39/FFBQAAAAASUVORK5CYII=) no-repeat left;
+      background-position: 20px;
+      border: none;
+      border-color: #979797;
+      padding: 24px 60px;
+      width: inherit;
+
+      ::placeholder {
+        font-family: Space Mono;
+      }
     }
 `;
