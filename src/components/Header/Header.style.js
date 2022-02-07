@@ -7,6 +7,7 @@ export const HeaderStyled = styled.header`
   justify-content: space-between;
 
   .background-mode {
+    cursor: pointer;
     display: flex;
     align-items: center;
 
