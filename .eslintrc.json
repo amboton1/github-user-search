@@ -18,7 +18,12 @@
         "prettier"
     ],
     "rules": {
+        "arrow-body-style": "off",
         "prettier/prettier": "warn",
+        "import/prefer-default-export": "off",
+        "react/react-in-jsx-scope": "off",
+        "react/jsx-filename-extension": "off",
+        "react/function-component-definition": "off",
         "no-unused-vars": "warn",
         "no-console": "off",
         "func-names": "off",

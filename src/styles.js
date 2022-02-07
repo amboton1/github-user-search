@@ -152,7 +152,7 @@ export const GlobalStyle = createGlobalStyle`
 
     h4 {
         color: ${backgrounds.kashmirBlue};
-        font-family: Space Mono, Verdana, sans-serif;
+        font-family: 'Space Mono', Verdana, sans-serif;
         font-size: 13px;
         line-height: 1;
 
