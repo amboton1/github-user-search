@@ -39,6 +39,10 @@ export const mixins = {
     }
   `,
 
+  componentShadow: css`
+    box-shadow: 0px 16px 30px -10px rgba(70, 96, 187, 0.198567);
+  `,
+
   contentWideLarge: css`
     margin-left: auto;
     margin-right: auto;
@@ -113,12 +117,11 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1.4;
 
         @media (max-width: ${sizes.tbBreakpointMax}) {
-            font-size: 50px;
             line-height: 1.35;
         }
 
         @media (max-width: ${sizes.spBreakpointMax}) {
-            font-size: 7vw;
+            font-size: 16px;
         }
     }
 
@@ -161,12 +164,11 @@ export const GlobalStyle = createGlobalStyle`
         line-height: 1;
 
         @media (max-width: ${sizes.tbBreakpointMax}) {
-            font-size: 40px;
             line-height: 1.35;
         }
 
         @media (max-width: ${sizes.spBreakpointMax}) {
-            font-size: 6vw;
+            font-size: 13px;
         }
     }
 

@@ -1,5 +1,4 @@
 import styled from 'styled-components';
-import { mixins } from '../../styles';
 
 export const HeaderStyled = styled.header`
   align-items: center;
