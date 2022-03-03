@@ -2,6 +2,7 @@ import React from 'react';
 import { GlobalStyle } from '../../styles';
 import Header from '../Header/Header';
 import Input from '../Input/Input';
+import Profile from '../Profile/Profile';
 import { LayoutStyled } from './Layout.style';
 
 const Layout = () => {
@@ -11,7 +12,7 @@ const Layout = () => {
       <LayoutStyled>
         <Header />
         <Input />
-        <p>content</p>
+        <Profile />
       </LayoutStyled>
     </>
   );
