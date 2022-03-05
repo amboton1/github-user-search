@@ -8,9 +8,12 @@ const Profile = () => {
       <div className="parent">
         <img src="/images/Oval.jpg" className="div1" alt="oval" />
         <div className="div2">
-          <h1 className="profile-title">The Octocat</h1>
-          <a href="#">@octocat</a>
-          <p>Joined 25 Jan 2011</p>
+          <div className="bio">
+            <h1 className="profile-title">The Octocat</h1>
+            <a href="#">@octocat</a>
+            <p>This profile has no bio</p>  
+          </div>
+          <span className="joined-text">Joined 25 Jan 2011</span>
         </div>
         <div className="div4">
           <p className="description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat mattis eros.</p>
