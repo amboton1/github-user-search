@@ -189,6 +189,8 @@ export const GlobalStyle = createGlobalStyle`
       background-position: 20px;
       border: none;
       border-color: #979797;
+      font-family: Space Mono;
+      font-size: 18px;
       padding: 24px 60px;
       width: inherit;
 
