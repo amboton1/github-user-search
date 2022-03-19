@@ -4,11 +4,21 @@ import { backgrounds, mixins } from '../../styles';
 export const ProfileStyled = styled.div`
     ${mixins.componentShadow};
     height: auto;
-    background: #FEFEFE;
+    background: ${props => props.darkMode ? '#1E2A47' : '#fefefe'};
     margin-top: 16px;
     border-radius: 15px;
     padding-left: 24px;
     padding-top: 32px;
+
+    span {
+        a {
+            color: ${props => props.darkMode && 'white'}
+        }
+    }
+
+    img {
+        border-radius: 50%;
+    }
 
     @media (min-width: 768px) and (max-width: 992px) {
         padding: 40px;
@@ -50,7 +60,7 @@ export const ProfileStyled = styled.div`
 
     .statistics {
         border-radius: 10px;
-        background: ${backgrounds.zircon};
+        background: ${props => props.darkMode ? backgrounds.bigStone : backgrounds.zircon};
         display: flex;
         justify-content: space-between;
         margin-right: 24px;
