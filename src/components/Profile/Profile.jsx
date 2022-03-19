@@ -1,10 +1,11 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
+import propTypes from 'prop-types'
 import React from 'react'
 import { ProfileStyled } from './Profile.style'
 
-const Profile = () => {
+const Profile = ({ darkMode }) => {
   return (
-    <ProfileStyled>
+    <ProfileStyled darkMode={darkMode}>
       <div className="parent">
         <img src="/images/Oval.jpg" className="div1" alt="oval" />
         <div className="div2">
@@ -53,6 +54,10 @@ const Profile = () => {
       </div>
     </ProfileStyled>
   )
+}
+
+Profile.propTypes = {
+  darkMode: propTypes.bool
 }
 
 export default Profile;

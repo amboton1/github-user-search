@@ -7,6 +7,9 @@ import { LayoutStyled } from './Layout.style';
 
 const Layout = () => {
   const [searchResults, setSearchResults] = useState(null);
+  const [darkMode, setDarkMode] = useState(false);
+
+  const onHandleDarkMode = () => setDarkMode(!darkMode);
 
   const onFormSubmit = async (searchTerm) => {
     const userInformations = await fetch(`https://api.github.com/users/${searchTerm}`);
@@ -17,11 +20,11 @@ const Layout = () => {
 
   return (
     <>
-      <GlobalStyle />
+      <GlobalStyle darkMode={darkMode} />
       <LayoutStyled>
-        <Header />
+        <Header darkMode={darkMode} onHandleDarkMode={onHandleDarkMode} />
         <Input onFormSubmit={onFormSubmit} />
-        <Profile />
+        <Profile darkMode={darkMode} />
       </LayoutStyled>
     </>
   );
