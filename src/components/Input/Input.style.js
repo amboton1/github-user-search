@@ -15,11 +15,17 @@ export const InputStyled = styled.div`
   
   input {
     ${mixins.componentStandardBorderRadius};
+
+    color: ${props => props.darkMode && 'white'}
   }
 
   button {
       position: absolute;
       right: 1vw;
       margin: 8px 0;
+
+      :hover {
+        background: #60ABFF;
+      }
   }
 `;

@@ -3,7 +3,10 @@ import propTypes from 'prop-types'
 import React from 'react'
 import { ProfileStyled } from './Profile.style'
 
-const Profile = ({ darkMode }) => {
+const Profile = ({ searchResults, darkMode }) => {
+  
+  const {avatar_url, name, created_at, bio, company, public_repos, followers, following, location, blog, twitter_username, html_url} = searchResults
+  
   return (
     <ProfileStyled darkMode={darkMode}>
       <div className="parent">
@@ -57,6 +60,7 @@ const Profile = ({ darkMode }) => {
 }
 
 Profile.propTypes = {
+  searchResults: propTypes.shape,
   darkMode: propTypes.bool
 }
 

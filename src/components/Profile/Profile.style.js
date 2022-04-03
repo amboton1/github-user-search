@@ -16,6 +16,10 @@ export const ProfileStyled = styled.div`
         }
     }
 
+    path {
+        fill: ${props => props.darkMode && 'white'}
+    }
+
     img {
         border-radius: 50%;
     }
