@@ -23,8 +23,8 @@ const Layout = () => {
       <GlobalStyle darkMode={darkMode} />
       <LayoutStyled>
         <Header darkMode={darkMode} onHandleDarkMode={onHandleDarkMode} />
-        <Input onFormSubmit={onFormSubmit} />
-        <Profile darkMode={darkMode} />
+        <Input darkMode={darkMode} onFormSubmit={onFormSubmit} />
+        <Profile darkMode={darkMode} searchResults={searchResults} />
       </LayoutStyled>
     </>
   );

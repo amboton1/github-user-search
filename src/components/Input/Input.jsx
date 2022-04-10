@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { InputStyled } from './Input.style';
 
-const Input = ({ onFormSubmit }) => {
+const Input = ({ darkMode, onFormSubmit }) => {
   const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (e) => setSearchTerm(e.target.value);
@@ -14,7 +14,7 @@ const Input = ({ onFormSubmit }) => {
   }
 
   return (
-      <InputStyled>
+      <InputStyled darkMode={darkMode}>
         <form onSubmit={handleSubmit}>
             <input type="text" placeholder="Search GitHub username…" value={searchTerm} onChange={(e) => handleChange(e)} />
             <button type="submit">Search</button>
@@ -24,6 +24,7 @@ const Input = ({ onFormSubmit }) => {
 };
 
 Input.propTypes = {
+  darkMode: PropTypes.bool,
   onFormSubmit: PropTypes.func
 }
 

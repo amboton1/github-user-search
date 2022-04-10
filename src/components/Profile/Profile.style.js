@@ -16,6 +16,10 @@ export const ProfileStyled = styled.div`
         }
     }
 
+    path {
+        fill: ${props => props.darkMode && 'white'}
+    }
+
     img {
         border-radius: 50%;
     }
@@ -39,6 +43,11 @@ export const ProfileStyled = styled.div`
     .div1 { grid-area: 1 / 1 / 2 / 2; }
     .div2 { grid-area: 1 / 2 / 2 / 3; display: flex; column-gap: 10rem; }
     .div4 { grid-area: 2 / 1 / 3 / 3; }
+
+    .avatar {
+        width: 117px;
+        height: 117px;
+    }
 
     .joined-text {
         margin-top: 5px;
@@ -66,6 +75,7 @@ export const ProfileStyled = styled.div`
         margin-right: 24px;
         padding: 18px 15px;
         text-align: center;
+        margin-top: 32px;
 
         .stat-title {
             font-size: 11px;
